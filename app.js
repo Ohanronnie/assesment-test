@@ -7,11 +7,11 @@ const { createServer } = require('@app-core/server');
 const { createConnection } = require('@app-core/mongoose');
 
 const canLogEndpointInformation = process.env.CAN_LOG_ENDPOINT_INFORMATION;
-
+/*
 createConnection({
   uri: process.env.MONGO_URI,
 });
-
+*/
 const server = createServer({
   port: process.env.PORT,
   JSONLimit: '150mb',
